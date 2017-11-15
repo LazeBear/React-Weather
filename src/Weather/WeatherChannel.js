@@ -12,7 +12,7 @@ export default class WeatherChannel extends Component {
         this.cityData;
         this.forcastData;
         this.unit="C";
-        this.size=8;
+        this.size=5;
         this.state = {
             // some dummy data for initial state
             condition: {

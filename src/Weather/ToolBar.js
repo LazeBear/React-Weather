@@ -88,13 +88,10 @@ export default class Toolbar extends Component {
         }
     }
 
-    changeSize(size) {
-        this.props.onSizeChange(size);
-        if(size ===5) {
-            this.setState({size:5});
-        } else {
-            this.setState({size:10});
-        }
+    changeSize(e) {
+        const currentSize = e.target.value
+        this.props.onSizeChange(currentSize);
+        this.setState({size: currentSize});
     }
 
     render() {
@@ -102,12 +99,19 @@ export default class Toolbar extends Component {
             <nav style={{padding:10}}>
                 <input type="text" onChange={(e) => this.setState({curCity: e.target.value})} />
                 <button onClick={() => this.reFetch()}>Load</button>
-                <br></br>
+                <br />
                 <label><input type="radio" name="unit" value="C" checked={this.state.unit === "C"?true:false} onChange={()=>this.changeUnit("C")}/> C</label>
                 <label><input type="radio" name="unit" value="F" onChange={()=>this.changeUnit("F")}/> F</label>
-                <br></br>
-                <label><input type="radio" name="size" value="5" checked={this.state.size === 5?true:false} onChange={()=>this.changeSize(5)}/> 5</label>
-                <label><input type="radio" name="size" value="10" onChange={()=>this.changeSize(10)}/> 10</label>
+                <br />
+                <label>
+                    Pick the forecast days:
+                    <select value={this.state.size} onChange={e=>this.changeSize(e)}>
+                        <option value="3">3</option>
+                        <option value="5">5</option>
+                        <option value="7">7</option>
+                        <option value="10">10</option>
+                    </select>
+                </label>
             </nav>
         )
     }
