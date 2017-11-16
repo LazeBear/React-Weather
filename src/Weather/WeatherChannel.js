@@ -12,6 +12,7 @@ export default class WeatherChannel extends Component {
         this.state = {
             cityData:{},
             forecastData:{},
+            unit:"C",
             condition: {
                 city:  '--',
                 temp: '--',
@@ -51,14 +52,15 @@ export default class WeatherChannel extends Component {
     }
     onConditionLoad(data) {
         this.setState({cityData:{data}});
-        this.filterConditionData(data,"C");
+        this.filterConditionData(data,this.state.unit);
     }
     onForecastLoad(data) {
         this.setState({forecastData:{data}});
-        this.filterForecastData(data,"C");
+        this.filterForecastData(data,this.state.unit);
     }
 
     onUnitChange(unit) {
+        this.setState({unit:unit});
         this.filterConditionData(this.state.cityData.data,unit);
         this.filterForecastData(this.state.forecastData.data,unit);
 

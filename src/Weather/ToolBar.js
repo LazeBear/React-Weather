@@ -14,25 +14,14 @@ export default class Toolbar extends Component {
         }
     }
 
-    reFetch() {
-        const {curCity} = this.state;
-        this.fetchConditionData(curCity);
-        this.fetchForecastData(curCity);
-    }
-
-    fetchConditionData(curCity) {
+    fetchData(curCity) {
+        console.log(curCity)
         axios.get(`${CONDITION_BASE_URL}${curCity}.json`)
             .then( city => {
                 console.log(city);
                 this.props.onConditionLoad(city.data.current_observation);
+                return axios.get(`${FORECAST_BASE_URL}${curCity}.json`);
             })
-            .catch(function (error) {
-                alert(`Failed to load weather condition: ${error}`)
-            });
-    }
-
-    fetchForecastData(curCity) {
-        axios.get(`${FORECAST_BASE_URL}${curCity}.json`)
             .then(forecast => {
                 // const respData = JSON.parse(forecast);
                 console.log(forecast);
@@ -40,13 +29,14 @@ export default class Toolbar extends Component {
             })
             .catch(function (error) {
                 alert(`Failed to load weather condition: ${error}`)
-                // console.log(error);
             });
     }
 
+
     // kick off initial request when comp mounted
     componentDidMount() {
-        this.reFetch();
+        const {curCity} = this.state;
+        this.fetchData(curCity);
     }
 
     // clean up resource when comp unmounted
@@ -68,7 +58,7 @@ export default class Toolbar extends Component {
         return (
             <nav style={{padding:10}}>
                 <input type="text" onChange={(e) => this.setState({curCity: e.target.value})} />
-                <button onClick={() => this.reFetch()}>Load</button>
+                <button onClick={() => this.fetchData(this.state.curCity)}>Load</button>
                 <br />
                 <label><input type="radio" name="unit" value="C" checked={this.state.unit === "C"?true:false} onChange={()=>this.changeUnit("C")}/> C</label>
                 <label><input type="radio" name="unit" value="F" onChange={()=>this.changeUnit("F")}/> F</label>

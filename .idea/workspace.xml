@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8335185e-e490-420d-83f7-315d4bb3dee9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Weather/Forecaster.js" afterPath="$PROJECT_DIR$/src/Weather/Forecaster.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Weather/ToolBar.js" afterPath="$PROJECT_DIR$/src/Weather/ToolBar.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Weather/WeatherChannel.js" afterPath="$PROJECT_DIR$/src/Weather/WeatherChannel.js" />
     </list>
@@ -20,16 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CityCondition.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Weather/CityCondition.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Forecaster.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Weather/Forecaster.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,30 +27,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToolBar.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ToolBar.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Weather/ToolBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1510744562000" expanded="false" signature="1974:1988" ph="..." />
-                <marker date="1510744562000" expanded="true" signature="1988:2491" ph="..." />
+                <marker date="1510796961000" expanded="false" signature="1713:1727" ph="..." />
+                <marker date="1510796961000" expanded="true" signature="1727:2250" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherChannel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WeatherChannel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Weather/WeatherChannel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
-              <caret line="61" column="64" lean-forward="true" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+            <state relative-caret-position="437">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1510794965000" expanded="true" signature="2191:2865" ph="..." />
-                <marker date="1510794965000" expanded="true" signature="2632:2723" ph="..." />
-                <marker date="1510794965000" expanded="true" signature="2760:2845" ph="..." />
+                <marker date="1510796629000" expanded="true" signature="2273:2947" ph="..." />
+                <marker date="1510796629000" expanded="true" signature="2714:2805" ph="..." />
+                <marker date="1510796629000" expanded="true" signature="2842:2927" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,9 +77,9 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/Weather/CityCondition.js" />
         <option value="$PROJECT_DIR$/src/css/Weather.css" />
-        <option value="$PROJECT_DIR$/src/Weather/ToolBar.js" />
         <option value="$PROJECT_DIR$/src/Weather/Forecaster.js" />
         <option value="$PROJECT_DIR$/src/Weather/WeatherChannel.js" />
+        <option value="$PROJECT_DIR$/src/Weather/ToolBar.js" />
       </list>
     </option>
   </component>
@@ -191,12 +178,12 @@
       <updated>1510317253321</updated>
       <workItem from="1510317254497" duration="12870000" />
       <workItem from="1510550400944" duration="133000" />
-      <workItem from="1510734531201" duration="8647000" />
+      <workItem from="1510734531201" duration="10504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21650000" />
+    <option name="totallyTimeSpent" value="23507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -262,8 +249,8 @@
           <caret line="92" column="23" lean-forward="false" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510744562000" expanded="false" signature="1974:1988" ph="..." />
-            <marker date="1510744562000" expanded="true" signature="1988:2491" ph="..." />
+            <marker date="1510796961000" expanded="false" signature="1713:1727" ph="..." />
+            <marker date="1510796961000" expanded="true" signature="1727:2250" ph="..." />
           </folding>
         </state>
       </provider>
@@ -274,9 +261,9 @@
           <caret line="53" column="10" lean-forward="false" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510794965000" expanded="true" signature="2191:2865" ph="..." />
-            <marker date="1510794965000" expanded="true" signature="2632:2723" ph="..." />
-            <marker date="1510794965000" expanded="true" signature="2760:2845" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2273:2947" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2714:2805" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2842:2927" ph="..." />
           </folding>
         </state>
       </provider>
@@ -311,9 +298,9 @@
           <caret line="53" column="10" lean-forward="true" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510794965000" expanded="true" signature="2191:2865" ph="..." />
-            <marker date="1510794965000" expanded="true" signature="2632:2723" ph="..." />
-            <marker date="1510794965000" expanded="true" signature="2760:2845" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2273:2947" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2714:2805" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2842:2927" ph="..." />
           </folding>
         </state>
       </provider>
@@ -324,8 +311,8 @@
           <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510744562000" expanded="false" signature="1974:1988" ph="..." />
-            <marker date="1510744562000" expanded="true" signature="1988:2491" ph="..." />
+            <marker date="1510796961000" expanded="false" signature="1713:1727" ph="..." />
+            <marker date="1510796961000" expanded="true" signature="1727:2250" ph="..." />
           </folding>
         </state>
       </provider>
@@ -390,27 +377,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weather/ToolBar.js">
+    <entry file="file://$PROJECT_DIR$/src/Weather/WeatherChannel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+        <state relative-caret-position="437">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510744562000" expanded="false" signature="1974:1988" ph="..." />
-            <marker date="1510744562000" expanded="true" signature="1988:2491" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2273:2947" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2714:2805" ph="..." />
+            <marker date="1510796629000" expanded="true" signature="2842:2927" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Weather/WeatherChannel.js">
+    <entry file="file://$PROJECT_DIR$/src/Weather/ToolBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
-          <caret line="61" column="64" lean-forward="true" selection-start-line="61" selection-start-column="64" selection-end-line="61" selection-end-column="64" />
+        <state relative-caret-position="176">
+          <caret line="13" column="9" lean-forward="false" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1510794965000" expanded="true" signature="2191:2865" ph="..." />
-            <marker date="1510794965000" expanded="true" signature="2632:2723" ph="..." />
-            <marker date="1510794965000" expanded="true" signature="2760:2845" ph="..." />
+            <marker date="1510796961000" expanded="false" signature="1713:1727" ph="..." />
+            <marker date="1510796961000" expanded="true" signature="1727:2250" ph="..." />
           </folding>
         </state>
       </provider>
