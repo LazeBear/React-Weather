@@ -9,16 +9,14 @@ import Toolbar      from './ToolBar';
 export default class WeatherChannel extends Component {
     constructor(props) {
         super(props);
-        this.cityData;
-        this.forcastData;
-        this.unit="C";
-        this.size=5;
         this.state = {
-            // some dummy data for initial state
+            cityData:{},
+            forecastData:{},
             condition: {
                 city:  '--',
                 temp: '--',
-                weather: '--'
+                weather: '--',
+                desc:'--'
             },
             days: [
                 {weekday: '--', high:23, low:18, icon:'http://icons.wxug.com/i/c/k/clear.gif'},
@@ -30,42 +28,40 @@ export default class WeatherChannel extends Component {
         }
     }
 
-    onConditionLoad(data) {
-        this.cityData = data;
-
+    filterConditionData(data,unit) {
+        console.log(data)
         const condition = {
             city: data.display_location.full,
             weather: data.weather,
-            temp: this.unit ==="C"? `${data.temp_c}C`:`${data.temp_f}F`,
+            temp: unit ==="C"? `${data.temp_c}C`:`${data.temp_f}F`,
             desc: data.local_time_rfc822
-    }
-        // console.log(condition);
+        }
         this.setState({condition});
     }
-    onForecastLoad(data) {
 
-        this.forcastData = data;
-        const days = data.slice(0, this.size).map(d => ({
+    filterForecastData(data,unit) {
+        const days = data.map(d => ({
                 weekday: d.date.weekday,
-                high: this.unit ==="C"? d.high.celsius:d.high.fahrenheit,
-                low: this.unit ==="C"? d.low.celsius:d.low.fahrenheit,
+                high: unit ==="C"? d.high.celsius:d.high.fahrenheit,
+                low: unit ==="C"? d.low.celsius:d.low.fahrenheit,
                 icon: d.icon_url
             })
         );
-        // console.log(data);
         this.setState({days})
+    }
+    onConditionLoad(data) {
+        this.setState({cityData:{data}});
+        this.filterConditionData(data,"C");
+    }
+    onForecastLoad(data) {
+        this.setState({forecastData:{data}});
+        this.filterForecastData(data,"C");
     }
 
     onUnitChange(unit) {
-        this.unit = unit;
-        this.onConditionLoad(this.cityData);
-        this.onForecastLoad(this.forcastData);
-    }
+        this.filterConditionData(this.state.cityData.data,unit);
+        this.filterForecastData(this.state.forecastData.data,unit);
 
-    onSizeChange(size) {
-        this.size = size;
-        this.onConditionLoad(this.cityData);
-        this.onForecastLoad(this.forcastData);
     }
 
     render() {
@@ -77,7 +73,6 @@ export default class WeatherChannel extends Component {
                     onConditionLoad={data => this.onConditionLoad(data)}
                     onForecastLoad={data => this.onForecastLoad(data)}
                     onUnitChange = {unit => this.onUnitChange(unit)}
-                    onSizeChange = {unit => this.onSizeChange(unit)}
                 />
                 <section id="left">
                     <CityCondition {...this.state.condition} />
